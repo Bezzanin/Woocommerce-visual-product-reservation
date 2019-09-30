@@ -405,6 +405,7 @@ function vv_add_item_meta($item_data, $cart_item) {
 }
 
 
+
 add_action( 'woocommerce_checkout_create_order_line_item', 'vv_add_dates_to_item_meta', 10, 4 );
 
 function vv_add_dates_to_item_meta($item, $cart_item_key, $values, $order) {
