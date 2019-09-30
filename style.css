@@ -1,0 +1,503 @@
+/*
+ Theme Name:   Divi Child
+ Theme URI:    http://www.seven-1.com
+ Description:  Divi Child Theme
+ Author:       Seven-1
+ Author URI:   http://www.seven-1.com
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         Divi, is, awesome
+*/
+/*
+ Theme Name:   Divi Child
+ Theme URI:    http://www.seven-1.com
+ Description:  Divi Child Theme
+ Author:       Seven-1
+ Author URI:   http://www.seven-1.com
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         Divi, is, awesome
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #FFF;
+    text-rendering: geometricPrecision;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+:root {
+    --layout-width: 960px;
+    --gutter: 1rem;
+    --title-font: 'Montserrat';
+    --body-font: 'Roboto';
+    --primary-color: #E3010F;
+    --dark-color: #000;
+    --body-text-color: rgba(0,0,0,0.8);
+    --body-line-height: 1.6;
+    --body-text-weight: 400;
+    --border-color: #f0f0f0;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Colors */
+
+.disable-color {
+    background: transparent !important;
+    border: none !important;
+}
+
+.disable-height {
+    min-height: auto !important;
+}
+
+/* Typography. Modify on font change */
+
+h1,h2,h3,h4,h5,h6,p,span {
+    margin: 0;
+}
+h1 {
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 3rem;
+    font-size: 4.5em;
+}
+h2 {
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.label-text {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.number-text-small {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.number-text-big {
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+button {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+p {
+    font-weight: var(--body-text-weight);
+    font-size: 1rem;
+    line-height: var(--body-line-height);
+    margin-bottom: 1rem;
+    color: var(--body-text-color);
+}
+/* Text layouts */
+
+.description {
+    padding-right: var(--gutter);
+    margin-bottom: 3rem;
+}
+
+/* Elements */
+.icon-cont {
+    width: calc(var(--gutter)*4);
+    height: calc(var(--gutter)*4);
+    margin-bottom: 2rem;
+}
+.img-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-overlay-cont {
+    position: absolute;
+    height: 450px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.50) 100%);
+}
+button {    
+    padding: 0.75rem 8rem;
+    border: none;
+    border-radius: 0;
+    background: #c1c0c0;
+    color: #fff;
+}
+button:focus {
+    outline: none;
+}
+.storage-cont {
+    max-height: 600px;
+}
+.light-btn:hover {
+    background: #fff;
+    color: var(--dark-color);
+    box-shadow: 0px 30px 60px rgba(0,0,0,0.5)
+}
+.light-text {
+    color: #fff;
+}
+.cta-btn {
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}
+.light-btn {
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+    transition: 0.3s ease-in-out;
+}
+.border-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.border-col {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+/* Layouts and grids */
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 4rem;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.fullscreen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.centered-both {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.centered {
+    justify-content: center !important;
+}
+.align-bottom {
+    justify-content: flex-end;
+    flex-grow: 0 !important;
+}
+.margin-m {
+    margin-bottom: 2rem; 
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    justify-content: flex-end;
+    align-self: center;
+}
+#details-section .row {
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.full-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+}
+#left-area {
+    width: 100%;
+    padding-right: 0 !important;
+}
+
+.horizontal-scroll {
+    overflow-x: scroll;
+}
+.red-header {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 30px 0;
+    justify-content: center;
+    background: var(--primary-color);
+}
+.red-header .container {
+    justify-content: center;
+}
+.legend-cont {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem
+}
+.legend-box {
+    height: 25px;
+    width: 25px;
+    margin-right: 1rem;
+}
+ol {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5rem;
+}
+ol li {
+    font-weight: 500;
+    color: #fff;
+    margin-right: 5rem;
+    font-size: 1.25rem;
+}
+input[type='radio'] {
+    margin-bottom: 0.5rem;
+}
+.col-6 {
+    max-width: var(--layout-width);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.col-5 {
+    max-width: calc(var(--layout-width)/1.2);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.col-4 {
+    max-width: calc(var(--layout-width)/1.5);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.col-3 {
+    max-width: calc(var(--layout-width)/2);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.col-2 {
+    max-width: calc(var(--layout-width)/3);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#post-1607 .col-2 {
+    max-width: 100%;
+    width: 70%;
+    float: left;
+    margin-bottom: 16px;
+}
+#post-1607 .col-1 {
+    width: 70%;
+    float: left;
+    margin-bottom: 16px;
+}
+
+.col-15:first-child {
+    margin-right: 16px;
+}
+/* @media (max-width: 960px) {
+    .container {
+        padding-left: 2rem;
+    }
+} */
+@media (max-width: 850px) {
+    .col-2 {
+        min-width: 50%;
+    }
+}
+@media (max-width: 800px) {
+    .col-15:first-child {
+        margin-right: 0;
+    }
+    button.tablinks {
+        margin-bottom: 0.5rem;
+    }
+}
+@media (max-width: 900px) {
+    svg#I1.floor1 {
+        width: 600px;
+		height: auto;
+    }
+}
+
+@media (max-width: 730px) {
+    svg#I1.floor1 {
+        width: 300px;
+		height: 320px;
+    }
+}
+
+@media (max-width: 650px) {
+    .col-3 {
+        min-width: 100%;
+    }
+    .col-2 {
+        min-width: 100%;
+    }
+}
+
+/* Create an active/current tablink class */
+button.active {
+    color: #fff;
+    background: #878787;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);    
+}
+button.tablinks:hover {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5)
+}
+button.tablinks {
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+.checkout-button button {
+    background: #d20000;
+    margin-right: 0;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+   
+}
+
+.hoverblock {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+#main-content .container:before {
+    width: 0;
+}
+
+#main-content .container {
+    padding-top: 0px;
+}
+#preview-container {
+    padding: 0;
+}
+#preview-container .container {
+    padding-top: 0;
+    margin: 0;
+}
+footer .container {
+    margin: auto;
+    display: block;
+}
+/* .woocommerce div.product {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #cacaca;
+    justify-content: center;
+}
+
+.woocommerce div.product p {
+    margin-bottom: -10px;
+    font-size: 12px;
+    margin-top: -10px;
+} */
+header .container {
+    display: block;
+    margin: auto;
+}
+.woocommerce-message a {
+    color: #fff !important;
+}
+
+#preview-id {
+    display: none;
+}
+.cls-3, .cls-4 {
+    stroke-width: 10px !important;
+}
+
+#et_search_icon:hover, #top-menu li.current-menu-ancestor>a, #top-menu li.current-menu-item>a, .bottom-nav li.current-menu-item>a, .comment-reply-link, .entry-summary p.price ins, .et-social-icon a:hover, .et_password_protected_form .et_submit_button, .footer-widget h4, .form-submit .et_pb_button, .mobile_menu_bar:after, .mobile_menu_bar:before, .nav-single a, .posted_in a, .woocommerce #content div.product p.price, .woocommerce #content div.product span.price, .woocommerce #content input.button, .woocommerce #content input.button.alt, .woocommerce #content input.button.alt:hover, .woocommerce #content input.button:hover, .woocommerce #respond input#submit, .woocommerce #respond input#submit.alt, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce .star-rating span:before, .woocommerce a.button, .woocommerce a.button.alt, .woocommerce a.button.alt:hover, .woocommerce a.button:hover, .woocommerce button.button, .woocommerce button.button.alt, .woocommerce button.button.alt:hover, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input.button.alt:hover, .woocommerce input.button:hover, .woocommerce-page #content div.product p.price, .woocommerce-page #content div.product span.price, .woocommerce-page #content input.button, .woocommerce-page #content input.button.alt, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #respond input#submit, .woocommerce-page #respond input#submit.alt, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page .star-rating span:before, .woocommerce-page a.button, .woocommerce-page a.button.alt, .woocommerce-page a.button.alt:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button, .woocommerce-page button.button.alt, .woocommerce-page button.button.alt:hover, .woocommerce-page button.button:hover, .woocommerce-page div.product p.price, .woocommerce-page div.product span.price, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input.button.alt:hover, .woocommerce-page input.button:hover, .wp-pagenavi a:hover, .wp-pagenavi span.current {
+    color: #fff;
+}
+
+.checkout-button {
+    width: 100%;
+    display: flex;
+    align-items:  center;
+    justify-content:  center;
+
+}
+
+input[type="number"] {
+    padding: 2px;
+    border: 1px solid #bbb;
+    color: #4e4e4e;
+    background-color: #fff;
+}
+
+#et-top-navigation .et-cart-info {
+    display: none;
+}
+.woocommerce-message a.button.wc-forward {
+    display: none;
+}
+dd p {
+    margin-top: 5px;
+}
+.wc-item-meta li {
+    list-style: none !important;
+}

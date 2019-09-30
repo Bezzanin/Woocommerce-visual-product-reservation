@@ -1,0 +1,17 @@
+div.storagewrap { width: 100%; display: flex; align-items: left; flex-flow: row wrap; }
+div.storage { flex: 1; margin: 0 4% 10px 0; box-sizing: border-box; }
+svg { height: 30em; }
+.pohja { fill: #e3e3e2; }
+.erotin { stroke-miterlimit: 10; stroke: #e3e3e2; stroke-width: 6px; stroke-dasharray: 11.55, 11.55; fill: none; }
+.varasto { fill: #009bc2; stroke-width: 1; transition: fill 0.1s; }
+.varasto.active { fill:#d20a11; }
+.varasto:not(.active):not(.reserved):hover:not(.unavailable) { fill:#85c3df; }
+.reserved { fill:#878787; }
+.varasto.unavailable { fill:#3B3B39; }
+.ui-tooltip { opacity: 1; }
+.ui-tooltip ul { list-style-type:none; padding: 0; margin: 0; }
+.ui-tooltip li { padding: 2px 0; }
+span.tipleft{ display: inline-block; width: 5em; text-align: left; font-weight:bold; }
+.ui-datepicker { z-index: 100 !important; }
+input#datepicker { width: 10em; }
+select#mapSelect { margin-bottom: 1em; }
